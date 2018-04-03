@@ -143,7 +143,7 @@ class QueryBuilder extends Builder
 
         $this->guardAgainstUnknownIncludes();
 
-        $this->addIncludesToQuery($this->request->includes());
+        $this->addIncludesToQuery($this->allowedIncludes);
 
         return $this;
     }
